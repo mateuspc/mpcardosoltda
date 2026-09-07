@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Central de suporte dos aplicativos da M P Cardoso Solutions."
+    />
+    <meta name="theme-color" content="#031A34" />
+    <link rel="canonical" href="https://mpcardoso.dev/support/" />
+    <link rel="stylesheet" href="/legal.css?v=4" />
+    <title>Suporte aos aplicativos | M P Cardoso Solutions</title>
+  </head>
+  <body>
+    <header class="legal-header">
+      <a href="/"><span class="legal-mark"><img src="/brand-icon.png" alt="" /></span>M P Cardoso Solutions</a>
+    </header>
+    <main class="legal-main legal-main-wide contact-main">
+      <p class="contact-eyebrow">Suporte aos aplicativos</p>
+      <h1>Como podemos ajudar?</h1>
+      <p class="contact-intro">
+        Escolha o aplicativo e descreva o que aconteceu. Quanto mais claros forem a
+        plataforma, a versão e os passos do problema, mais precisa será nossa resposta.
+      </p>
+
+      <div class="contact-grid">
+        <section class="contact-panel contact-form-panel">
+          <h2>Abrir uma solicitação</h2>
+          <form id="support-form">
+            <div class="form-grid">
+              <label>
+                Seu nome
+                <input name="name" type="text" maxlength="100" autocomplete="name" required />
+              </label>
+              <label>
+                Seu e-mail
+                <input name="email" type="email" maxlength="160" autocomplete="email" required />
+              </label>
+              <label>
+                Aplicativo
+                <select name="appName" id="app-name" required>
+                  <option value="">Selecione</option>
+                  <option>PitchPro</option>
+                  <option>Car Audio Box &amp; Tuning Pro</option>
+                  <option>Ritmos de Violão</option>
+                  <option>Audio RTA Analyzer</option>
+                  <option>Acoustic Pro</option>
+                  <option>Campo Harmônico</option>
+                  <option>Stem Extractor</option>
+                  <option>Pedal Cifras</option>
+                </select>
+              </label>
+              <label>
+                Plataforma
+                <select name="platform" required>
+                  <option value="">Selecione</option>
+                  <option>Android</option>
+                  <option>iOS</option>
+                  <option>Outro</option>
+                </select>
+              </label>
+              <label>
+                Categoria
+                <select name="category" required>
+                  <option value="">Selecione</option>
+                  <option>Funcionamento do aplicativo</option>
+                  <option>Áudio e processamento</option>
+                  <option>Backup e restauração</option>
+                  <option>Compra ou assinatura</option>
+                  <option>Restauração de compra</option>
+                  <option>Outro assunto</option>
+                </select>
+              </label>
+              <label>
+                Versão do aplicativo <small>(opcional)</small>
+                <input name="appVersion" type="text" maxlength="40" placeholder="Ex.: 1.2.0 (34)" />
+              </label>
+            </div>
+            <label>
+              Descreva sua solicitação
+              <textarea
+                name="message"
+                rows="7"
+                maxlength="4000"
+                placeholder="O que você esperava, o que aconteceu e quais passos já tentou."
+                required
+              ></textarea>
+            </label>
+            <label class="honeypot" aria-hidden="true">
+              Não preencha
+              <input name="website" type="text" tabindex="-1" autocomplete="off" />
+            </label>
+            <label class="consent">
+              <input name="consent" type="checkbox" required />
+              <span>
+                Concordo com o uso dos dados para atendimento desta solicitação, conforme a
+                <a href="/privacy/" target="_blank" rel="noreferrer">Política de Privacidade</a>.
+              </span>
+            </label>
+            <button class="contact-button" type="submit">Enviar para o suporte</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <p class="support-safety">
+            Para sua segurança, não envie senhas, número completo de cartão, códigos de
+            autenticação ou arquivos de áudio com conteúdo confidencial.
+          </p>
+        </section>
+
+        <section class="contact-panel contact-panel-dark">
+          <h2>Para agilizar a resposta</h2>
+          <ul>
+            <li>Informe o modelo do aparelho e a versão do sistema.</li>
+            <li>Descreva os passos até o problema ocorrer.</li>
+            <li>Informe a mensagem de erro, se houver.</li>
+            <li>Para compras, diga apenas a loja e o produto — nunca os dados do cartão.</li>
+          </ul>
+          <p>
+            As respostas serão enviadas ao e-mail informado no formulário.
+          </p>
+        </section>
+
+        <section class="contact-panel">
+          <h2>Documentos do aplicativo</h2>
+          <p id="support-document-copy">
+            Selecione um aplicativo para acessar seus documentos específicos, quando disponíveis.
+          </p>
+          <div class="support-links">
+            <a id="support-privacy-link" href="/privacy/">Política de Privacidade geral</a>
+            <a id="support-terms-link" href="/terms/">Termos de Uso gerais</a>
+          </div>
+          <p class="contact-detail">
+            <strong>Prefere enviar um e-mail?</strong><br />
+            <a href="mailto:mateus@mpcardoso.dev?subject=Suporte%20a%20aplicativo">mateus@mpcardoso.dev</a>
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="legal-footer">
+      <a href="/">Início</a><a href="/contact/">Contato comercial</a
+      ><a href="/privacy/">Privacidade</a><a href="/terms/">Termos de Uso</a>
+    </footer>
+    <script src="/support/support.js?v=2" defer></script>
+  </body>
+</html>

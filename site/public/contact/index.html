@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Entre em contato com a M P Cardoso Solutions para desenvolvimento mobile, CI/CD e publicação de aplicativos." />
+    <meta name="theme-color" content="#031A34" />
+    <link rel="canonical" href="https://mpcardoso.dev/contact/" />
+    <link rel="stylesheet" href="/legal.css?v=4" />
+    <title>Fale conosco | M P Cardoso Solutions</title>
+  </head>
+  <body>
+    <header class="legal-header"><a href="/"><span class="legal-mark"><img src="/brand-icon.png" alt="" /></span>M P Cardoso Solutions</a></header>
+    <main class="legal-main contact-main">
+      <p class="contact-eyebrow">Contato comercial</p>
+      <h1>Vamos conversar sobre seu aplicativo.</h1>
+      <p class="contact-intro">Descreva o produto, a plataforma e o momento atual do projeto. Respondemos solicitações sobre desenvolvimento Android e iOS, automação de releases e publicação nas lojas.</p>
+      <div class="contact-grid">
+        <section class="contact-panel contact-form-panel">
+          <h2>Conte sobre o projeto</h2>
+          <form id="contact-form">
+            <div class="form-grid">
+              <label>Seu nome<input name="name" type="text" maxlength="100" autocomplete="name" required /></label>
+              <label>Seu e-mail<input name="email" type="email" maxlength="160" autocomplete="email" required /></label>
+              <label>Empresa <small>(opcional)</small><input name="company" type="text" maxlength="120" autocomplete="organization" /></label>
+              <label>Serviço desejado<select name="service" required><option value="">Selecione</option><option>Desenvolvimento de aplicativo</option><option>CI/CD e publicação nas lojas</option><option>Manutenção e evolução</option><option>Integrações mobile</option><option>Consultoria técnica</option></select></label>
+              <label>Momento do projeto<select name="stage" required><option value="">Selecione</option><option>Tenho apenas a ideia</option><option>Tenho design ou especificação</option><option>Já existe um aplicativo</option><option>Preciso publicar uma versão</option></select></label>
+              <label>Prazo esperado<select name="timeline" required><option value="">Selecione</option><option>Até 30 dias</option><option>De 1 a 3 meses</option><option>De 3 a 6 meses</option><option>A definir</option></select></label>
+            </div>
+            <label>O que você precisa?<textarea name="message" rows="6" maxlength="3000" placeholder="Objetivo, plataformas, funcionalidades principais e o que já está pronto." required></textarea></label>
+            <label class="honeypot" aria-hidden="true">Não preencha<input name="website" type="text" tabindex="-1" autocomplete="off" /></label>
+            <label class="consent"><input name="consent" type="checkbox" required /><span>Concordo com o uso dos dados para resposta a esta solicitação, conforme a <a href="/privacy/" target="_blank">Política de Privacidade</a>.</span></label>
+            <button class="contact-button" type="submit">Enviar solicitação</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <p class="contact-detail"><strong>Prefere e-mail?</strong><br /><a href="mailto:mateus@mpcardoso.dev">mateus@mpcardoso.dev</a></p>
+        </section>
+        <section class="contact-panel contact-panel-dark">
+          <h2>Como podemos ajudar</h2>
+          <ul>
+            <li>Aplicativos Flutter para Android e iOS</li>
+            <li>Integrações nativas, APIs e pagamentos</li>
+            <li>CI/CD, assinatura e TestFlight</li>
+            <li>Publicação na Google Play e App Store</li>
+            <li>Manutenção e evolução de produtos mobile</li>
+          </ul>
+          <p>Atendimento empresarial a partir de Anchieta, Espírito Santo, Brasil.</p>
+        </section>
+      </div>
+      <p class="contact-privacy">Ao entrar em contato, os dados informados serão usados exclusivamente para responder à solicitação, conforme nossa <a href="/privacy/">Política de Privacidade</a>.</p>
+    </main>
+    <footer class="legal-footer"><a href="/">Início</a><a href="/privacy/">Privacidade</a><a href="/terms/">Termos de Uso</a><a href="/support/">Suporte</a></footer>
+    <script src="/contact/contact.js?v=2" defer></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.DS_Store
+**/.DS_Store
+**/node_modules/
+**/dist/
+**/*.local
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.p12
+*.jks
+*.keystore
+*service-account*.json
+*credentials*.json
