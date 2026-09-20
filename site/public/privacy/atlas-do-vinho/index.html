@@ -39,7 +39,7 @@
         <div class="legal-hero-inner">
           <p class="legal-kicker">Documento do aplicativo</p>
           <h1>Política de <em>Privacidade</em></h1>
-          <p class="legal-updated">Versão 1.0 · Última atualização: 5 de setembro de 2026</p>
+          <p class="legal-updated">Versão 1.1 · Última atualização: 19 de setembro de 2026</p>
         </div>
       </section>
 
@@ -72,7 +72,7 @@
           </p>
 
           <div class="legal-summary">
-            <p><strong>Resumo:</strong> o app não exige conta própria. Catálogo, favoritos e preferências funcionam localmente. Sommelier, voz e pesquisa externa precisam de internet e só são acionados quando você escolhe usá-los. O RevenueCat pode inicializar e verificar o estado da assinatura quando o app é aberto.</p>
+            <p><strong>Resumo:</strong> o app não exige conta própria. Catálogo, favoritos e preferências funcionam localmente. Antes do primeiro processamento remoto pelo Sommelier ou pela transcrição de voz, o app informa quais dados serão enviados, identifica o destinatário e solicita sua permissão explícita. O RevenueCat pode inicializar e verificar o estado da assinatura quando o app é aberto.</p>
           </div>
 
           <section class="legal-section" id="responsavel">
@@ -144,9 +144,12 @@
             </ul>
             <p>
               Esses dados são usados para interpretar o pedido, consultar o catálogo e devolver a
-              recomendação. Os componentes de IA, busca semântica e transcrição são executados em
-              infraestrutura contratada e controlada para o serviço, incluindo uma instância própria
-              do Ollama, sem encaminhar o conteúdo da conversa a um provedor externo de IA generativa.
+              recomendação. O destinatário é o serviço Atlas do Vinho operado pela
+              <strong>M P Cardoso Solutions</strong> e hospedado em infraestrutura contratada da
+              <strong>Contabo GmbH</strong>. Os componentes Qwen via Ollama, E5 e Whisper são
+              executados nessa infraestrutura controlada para o serviço. O conteúdo da conversa,
+              o texto do rótulo e o áudio não são encaminhados à OpenAI, Google Gemini, Anthropic,
+              Alibaba Cloud ou a outro provedor externo de API de IA generativa.
             </p>
             <p>
               O serviço não possui uma base de conversas destinada a treinamento e o aplicativo não
@@ -154,13 +157,21 @@
               rede e segurança pode registrar dados técnicos, como endereço IP, rota acessada, horário,
               status e identificador da solicitação, para proteção, diagnóstico e prevenção de abuso.
             </p>
+            <p>
+              Antes do primeiro envio remoto, o aplicativo apresenta essas informações e solicita
+              consentimento explícito. Se a permissão não for concedida ou for revogada, nenhuma
+              solicitação é enviada ao serviço remoto: o catálogo e as recomendações locais continuam
+              disponíveis. A escolha pode ser alterada em “Configurações &gt; Privacidade do Sommelier”.
+              Uma mudança relevante nos dados, finalidades ou destinatários exigirá uma nova decisão.
+            </p>
           </section>
 
           <section class="legal-section" id="voz">
             <h2>5. Transcrição por voz</h2>
             <p>
               Com autorização para o microfone, o app cria um arquivo de áudio WAV temporário e o
-              envia ao backend junto com o idioma. O áudio é usado para gerar a transcrição. O app e
+              envia ao serviço Atlas junto com o idioma, somente depois da permissão explícita para
+              processamento remoto. O áudio é usado para gerar a transcrição. O app e
               o servidor solicitam a exclusão dos arquivos temporários ao final do processamento,
               inclusive em caso de falha, observadas as limitações de cache e armazenamento do sistema.
             </p>
@@ -219,13 +230,16 @@
               <li>Google ML Kit, para métricas técnicas dos componentes locais;</li>
               <li>RevenueCat e a loja Apple ou Google, para assinaturas;</li>
               <li>Google e sites externos, quando você inicia uma pesquisa de preços;</li>
-              <li>fornecedores de hospedagem, rede e segurança do backend e do site;</li>
+              <li><a href="https://contabo.com/en/legal/privacy/" rel="noopener noreferrer">Contabo GmbH</a>, que hospeda a infraestrutura do backend e pode processar dados técnicos necessários para entregar e proteger o serviço;</li>
+              <li>fornecedores de rede e segurança do backend e do site;</li>
               <li>autoridades, quando exigido por lei ou necessário para proteção de direitos.</li>
             </ul>
             <p>
               Esses fornecedores podem processar dados fora do Brasil conforme seus contratos,
-              salvaguardas e políticas. A M P Cardoso Solutions não vende dados pessoais e não os
-              utiliza para publicidade direcionada.
+              salvaguardas e políticas. Exigimos que qualquer fornecedor com acesso a dados mantenha
+              proteção igual ou superior à descrita nesta política e à exigida pela legislação
+              aplicável. A M P Cardoso Solutions não vende dados pessoais e não os utiliza para
+              publicidade direcionada.
             </p>
           </section>
 
@@ -237,10 +251,19 @@
               necessário, também pode depender de consentimento ou autorização específica do sistema.
             </p>
             <p>
-              Dados são mantidos pelo período necessário à finalidade informada, às exigências legais e
-              à defesa de direitos. Conteúdo temporário é descartado depois do processamento; dados locais
-              permanecem até exclusão; registros de assinatura seguem os prazos das lojas e do RevenueCat;
-              registros técnicos seguem os ciclos operacionais e de segurança da infraestrutura.
+              Mensagens, histórico enviado, preferências, texto de rótulo e áudio não são gravados em
+              uma base de conversas pelo serviço Atlas. O arquivo de áudio temporário é excluído ao
+              término da transcrição, inclusive em caso de falha. Os logs da aplicação registram apenas
+              rota, status, duração e identificador da solicitação, sem mensagem, transcrição ou áudio.
+              Registros técnicos de acesso e segurança da infraestrutura, que podem incluir endereço IP,
+              são mantidos somente pelo período necessário para entregar, proteger e diagnosticar o
+              serviço, conforme os ciclos operacionais e contratuais do provedor, salvo quando um prazo
+              maior for necessário para investigar abuso, cumprir obrigação legal ou exercer direitos.
+            </p>
+            <p>
+              Dados locais permanecem até serem apagados nas configurações ou com a desinstalação.
+              Registros de assinatura seguem os prazos da Apple, do Google e do RevenueCat. Solicitações
+              de exclusão relativas ao backend ou à assinatura podem ser feitas pelo contato abaixo.
             </p>
             <p>
               São adotadas medidas técnicas e organizacionais razoáveis, como controle de acesso,
