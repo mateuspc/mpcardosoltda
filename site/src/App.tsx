@@ -9,6 +9,7 @@ const services = [
 
 const apps = [
   { icon: SlidersHorizontal, name: 'PitchPro', label: 'Performance musical', copy: 'Player offline de palco para mudar tom e andamento, organizar repertórios e preparar playbacks para cada voz.', highlight: 'App Store + Google Play', href: '/pitchpro/' },
+  { icon: Activity, name: 'Delay & Reverb Pro', label: 'Ferramenta musical', copy: 'Calculadora de BPM, delay e reverb com Tap BPM, presets, setlists, modo palco e backup local.', highlight: 'Android + iOS', href: '/delay-reverb/' },
   { icon: Box, name: 'Car Audio Box', label: 'Projeto automotivo', copy: 'Dimensionamento de caixas, catálogo, plano de corte, verificação no carro, 3D e análise RTA em um fluxo guiado.', highlight: 'Android + iOS', href: '/car-audio-box/' },
   { icon: Guitar, name: 'Ritmos de Violão', label: 'Educação musical', copy: 'Ritmos, levadas, acordes, afinador, metrônomo e harmonia em uma experiência mobile completa.', highlight: '100 mil+ downloads', href: 'https://play.google.com/store/apps/details?id=br.com.devfull.cursodeviolao' },
   { icon: BarChart3, name: 'Audio RTA Analyzer', label: 'Análise de áudio', copy: 'Espectro, frequências, níveis em dB e testes práticos de sistemas de som em tempo real.', highlight: 'DSP em tempo real', href: 'https://play.google.com/store/apps/details?id=app.rtalab.audioanalyzer' },
@@ -77,7 +78,7 @@ function App() {
       <article className="company-card"><p className="eyebrow">Empresa</p><h2>M P Cardoso Solutions</h2><p>Empresa brasileira de desenvolvimento de software sob encomenda, licenciamento de soluções customizáveis e consultoria em tecnologia.</p><dl><div><dt>Responsável legal e técnico</dt><dd>Mateus Polonini Cardoso — desenvolvedor mobile com ampla experiência</dd></div><div><dt>CNPJ</dt><dd>61.798.348/0001-60</dd></div><div><dt>Sede</dt><dd>Anchieta, Espírito Santo — Brasil</dd></div></dl></article>
       <article className="contact-card"><Mail size={34}/><h3>Vamos construir seu próximo app?</h3><p>Converse com a empresa sobre escopo, entrega e publicação.</p><a className="primary-link" href="/contact/">Fale com a empresa <ArrowRight size={18}/></a></article>
     </section>
-    <footer><div className="brand"><span className="brand-mark"><img src="/brand-icon.png" alt="" /></span><span><strong>M P Cardoso Solutions</strong><small>Software que chega ao mercado.</small></span></div><div><a href="/pitchpro/">PitchPro</a><a href="/car-audio-box/">Car Audio Box</a><a href="/privacy/">Política de Privacidade</a><a href="/terms/">Termos de Uso</a><a href="/support/">Suporte</a><a href="/contact/">Contato</a></div><p>© 2026 M P Cardoso Solutions · CNPJ 61.798.348/0001-60</p></footer>
+    <footer><div className="brand"><span className="brand-mark"><img src="/brand-icon.png" alt="" /></span><span><strong>M P Cardoso Solutions</strong><small>Software que chega ao mercado.</small></span></div><div><a href="/pitchpro/">PitchPro</a><a href="/delay-reverb/">Delay &amp; Reverb Pro</a><a href="/car-audio-box/">Car Audio Box</a><a href="/privacy/">Política de Privacidade</a><a href="/terms/">Termos de Uso</a><a href="/support/">Suporte</a><a href="/contact/">Contato</a></div><p>© 2026 M P Cardoso Solutions · CNPJ 61.798.348/0001-60</p></footer>
   </main>
 }
 
