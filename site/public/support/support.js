@@ -10,6 +10,10 @@ const appDocuments = {
     slug: 'pitchpro',
     query: 'pitchpro',
   },
+  'Delay & Reverb Pro': {
+    slug: 'delay-reverb',
+    query: 'delay-reverb',
+  },
   'Car Audio Box & Tuning Pro': {
     slug: 'car-audio-box',
     query: 'car-audio-box',
