@@ -18,6 +18,10 @@ const appDocuments = {
     slug: 'car-audio-box',
     query: 'car-audio-box',
   },
+  'ClearWave Pro': {
+    slug: 'clearwave',
+    query: 'clearwave',
+  },
 }
 
 const updateDocumentLinks = () => {
